@@ -7,7 +7,7 @@ from loglikelihood import *
 from statistics import *
   
 # Choice
-chosenAlternative = Choise
+chosenAlternative = Choice
 
 #Parameters to be estimated
 # Arguments:
@@ -26,25 +26,24 @@ BetaCost             = Beta('BetaCost',0,-10000,10000,0)
 # Define here arithmetic expressions for name that are not directly available from the data
 
 
-Costcar = DefineVariable('Costcar', Costcar)
-CostPT  = DefineVariable('CostPT', CostPT)
-TTCar = DefineVariable('TTCar', TimeCar)
-TTPt  = DefineVariable('TTPt', TimePT + WalkingTimePT + WaintingTimePT)
-Carav = DefineVariable('Carav' , ((NbCar >= 1) + (NbMoto >= 1) >=1) )
 
+TTCar = DefineVariable('TTCar', TimeCar)
+TTPt  = DefineVariable('TTPt', TimePT + WalkingTimePT + WaitingTimePT)
+Carav = DefineVariable('Carav' , ((NbCar >= 1) + (NbMoto >= 1) >=1) )
+One   = DefineVariable('One',1)
 
 # Utilities
 
-Car = Constant1 + BetaTT * TTCar + BetaCost* Costcar
-Public = Constant2 + BetaTT * TTPt + BetaCost* CostPt
+Car = Constant1 + BetaTT * TTCar + BetaCost* CostCar
+Public = Constant2 + BetaTT * TTPt + BetaCost* CostPT
 Bike = 0
 
 V = {1: Car, 2: Public,3: Bike}
 
-av = {1: Carav, 2: One ,3: One}
+av = {1: Carav, 2: one ,3: one}
 
 #Exclude
-BIOGEME_OBJECT.EXCLUDE =  Choise   ==  -1
+BIOGEME_OBJECT.EXCLUDE =  Choice   ==  -1
 
 # MNL (Multinomial Logit model), with availability conditions
 logprob = bioLogLogit(V,av,chosenAlternative)
@@ -63,6 +62,6 @@ nullLoglikelihood(av,'obsIter')
 choiceSet = [1,2,3]
 cteLoglikelihood(choiceSet,chosenAlternative,'obsIter')
 availabilityStatistics(av,'obsIter')
-BIOGEME_OBJECT.FORMULAS['Opt1'] = Opt1
-BIOGEME_OBJECT.FORMULAS['Opt2'] = Opt2
-BIOGEME_OBJECT.FORMULAS['Opt3'] = Opt3
+BIOGEME_OBJECT.FORMULAS['Car'] = Car
+BIOGEME_OBJECT.FORMULAS['Public'] = Public
+BIOGEME_OBJECT.FORMULAS['Bike'] = Bike

@@ -1,0 +1,11 @@
+This file has automatically been generated.
+Wed Oct 25 15:59:10 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:18:58 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [15:59:10]bioMain.cc:108  pythonbiogeme simple_model optimaDataset_12.dat
+[15:59:10]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[15:59:10]bioModelParser.cc:109  simple_model.py exists
+FATAL ERROR: [15:59:10]bioModelParser.cc:927 Unable to get the object operatorIndex
