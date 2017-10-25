@@ -20,25 +20,28 @@ chosenAlternative = Choise
 Constant1	 = Beta('Constant1',0,-10000,10000,1)
 Constant2	 = Beta('Constant2',0,-10000,10000,0)
 Constant3	 = Beta('Constant3',0,-10000,10000,0)
-Total_TT	 = Beta('Total_TT',0,-10000,10000,0)
-Cost             = Beta('Cost',0,-10000,10000,0)
+BetaTT	 = Beta('BetaTT',0,-10000,10000,0)
+BetaCost             = Beta('BetaCost',0,-10000,10000,0)
 
 # Define here arithmetic expressions for name that are not directly available from the data
 
 
+Costcar = DefineVariable('Costcar', Costcar)
+CostPT  = DefineVariable('CostPT', CostPT)
+TTCar = DefineVariable('TTCar', TimeCar)
+TTPt  = DefineVariable('TTPt', TimePT + WalkingTimePT + WaintingTimePT)
+Carav = DefineVariable('Carav' , ((NbCar >= 1) + (NbMoto >= 1) >=1) )
 
 
+# Utilities
 
+Car = Constant1 + BetaTT * TTCar + BetaCost* Costcar
+Public = Constant2 + BetaTT * TTPt + BetaCost* CostPt
+Bike = 0
 
+V = {1: Car, 2: Public,3: Bike}
 
-
-
-
-
-
-
-V = {1: Opt1,2: Opt2,3: Opt3}
-av = {1: one,2: one,3: one}
+av = {1: Carav, 2: One ,3: One}
 
 #Exclude
 BIOGEME_OBJECT.EXCLUDE =  Choise   ==  -1
