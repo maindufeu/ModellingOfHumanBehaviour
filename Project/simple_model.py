@@ -5,7 +5,7 @@ from biogeme import *
 from headers import *
 from loglikelihood import *
 from statistics import *
-  
+
 # Choice
 chosenAlternative = Choice
 
@@ -17,6 +17,7 @@ chosenAlternative = Choice
 #   4  Upper bound
 #   5  0: estimate the parameter, 1: keep it fixed
 
+
 Constant1	 = Beta('Constant1',0,-10000,10000,1)
 Constant2	 = Beta('Constant2',0,-10000,10000,0)
 Constant3	 = Beta('Constant3',0,-10000,10000,0)
@@ -26,21 +27,20 @@ BetaCost             = Beta('BetaCost',0,-10000,10000,0)
 # Define here arithmetic expressions for name that are not directly available from the data
 
 
-
 TTCar = DefineVariable('TTCar', TimeCar)
 TTPt  = DefineVariable('TTPt', TimePT + WalkingTimePT + WaitingTimePT)
-Carav = DefineVariable('Carav' , ((NbCar >= 1) + (NbMoto >= 1) >=1) )
-One   = DefineVariable('One',1)
+Carav = DefineVariable('Carav' , (((NbCar >= 1) + (NbMoto >= 1) )>=1) )
+one   = DefineVariable('one',1)
 
 # Utilities
 
-Car = Constant1 + BetaTT * TTCar + BetaCost* CostCar
-Public = Constant2 + BetaTT * TTPt + BetaCost* CostPT
-Bike = 0
+Car = Constant1*one + BetaTT * TTCar + BetaCost* CostCar
+Public = Constant2*one + BetaTT * TTPt + BetaCost* CostPT
+Bike = 0*one
 
-V = {1: Car, 2: Public,3: Bike}
+V = {0: Car, 1: Public,2: Bike}
 
-av = {1: Carav, 2: one ,3: one}
+av = {0: one, 1: one ,2: one}
 
 #Exclude
 BIOGEME_OBJECT.EXCLUDE =  Choice   ==  -1
@@ -51,6 +51,7 @@ logprob = bioLogLogit(V,av,chosenAlternative)
 # Defines an iterator on the data
 rowIterator('obsIter')
 
+
 # Define the likelihood function for the estimation
 BIOGEME_OBJECT.ESTIMATE = Sum(logprob,'obsIter')
 
@@ -58,6 +59,7 @@ BIOGEME_OBJECT.ESTIMATE = Sum(logprob,'obsIter')
 BIOGEME_OBJECT.PARAMETERS['optimizationAlgorithm'] = "BIO"
 
 # Print some statistics:
+
 nullLoglikelihood(av,'obsIter')
 choiceSet = [1,2,3]
 cteLoglikelihood(choiceSet,chosenAlternative,'obsIter')
