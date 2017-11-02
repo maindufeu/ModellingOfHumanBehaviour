@@ -21,14 +21,14 @@ chosenAlternative = Choice
 Constant1	 = Beta('Constant1',0,-10000,10000,1)
 Constant2	 = Beta('Constant2',0,-10000,10000,0)
 Constant3	 = Beta('Constant3',0,-10000,10000,0)
-BetaTT	 = Beta('BetaTT',0,-10000,10000,0)
-BetaCost             = Beta('BetaCost',0,-10000,10000,0)
+BetaTT	         = Beta('BetaTT',0,-10000,10000,0)
+BetaCost         = Beta('BetaCost',0,-10000,10000,0)
 
 # Define here arithmetic expressions for name that are not directly available from the data
 
 
 TTCar = DefineVariable('TTCar', TimeCar)
-TTPt  = DefineVariable('TTPt', TimePT + WalkingTimePT + WaitingTimePT)
+TTPt  = DefineVariable('TTPt', TimePT)
 Carav = DefineVariable('Carav' , (((NbCar >= 1) + (NbMoto >= 1) )>=1) )
 one   = DefineVariable('one',1)
 

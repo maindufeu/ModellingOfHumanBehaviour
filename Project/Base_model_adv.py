@@ -17,7 +17,10 @@ from statistics import *
 ASC_PT = Beta('ASC_PT',0,-10000,10000,1)
 ASC_PM =  Beta('ASC_PM ',0,-10000,10000,0)
 ASC_SM = Beta('ASC_SM',0,-10000,10000,0)
-Time= Beta('Time',0,-10000,10000,0)
+
+Time_PT_in= Beta('Time_PT_in',0,-10000,10000,0)
+Time_PT_out= Beta('Time_PT_out',0,-10000,10000,0)
+Time_car= Beta('Time_car',0,-10000,10000,0)
 Distance= Beta('Distance',0,-10000,10000,0)
 BetaCost         = Beta('BetaCost',0,-10000,10000,0)
 # Define here arithmetic expressions for name that are not directly available from the data
@@ -25,15 +28,17 @@ BetaCost         = Beta('BetaCost',0,-10000,10000,0)
 one  = DefineVariable('one',1)
 car_time  = DefineVariable('car_time', TimeCar  )
 pt_time = DefineVariable('pt_time', TimePT)
+pt_time_in = DefineVariable('pt_time_in', InVehicleTime)
+pt_time_out = DefineVariable('pt_time_out', WaitingTimePT + WalkingTimePT)
 distance_trip=DefineVariable('distance_trip',distance_km)
 
 # Utilities
 ## public transport
-Opt1 = ASC_PT*one+Time*pt_time + BetaCost* CostCar
+Opt1 = ASC_PT*one+Time_PT_in*pt_time_in + Time_PT_out*pt_time_out + BetaCost* CostCar
 ## private mode
-Opt2 = ASC_PM*one+Time*car_time + BetaCost* CostPT
+Opt2 = ASC_PM*one+Time_car*car_time + BetaCost* CostPT
 ## soft modes
-Opt3 = ASC_SM*one 
+Opt3 = ASC_SM*one + Distance * distance_km
 
 V = {0: Opt1,1: Opt2,2: Opt3}
 av = {0: one,1: one,2: one}  #what is that???

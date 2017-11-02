@@ -1,42 +1,55 @@
 This file has automatically been generated.
-Thu Nov  2 15:47:18 2017
+Thu Nov  2 16:50:39 2017
 Michel Bierlaire, EPFL
 
-biogeme 2.6a [Mon Apr 24 10:19:43 BST 2017]
+biogeme 2.6a [Mon Apr 24 10:18:58 BST 2017]
 Michel Bierlaire, EPFL
 
-Warning: [15:47:18]bioMain.cc:108  pythonbiogeme simple_model optimaDataset_12.dat
-[15:47:18]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
-[15:47:18]bioModelParser.cc:109  simple_model.py exists
+Warning: [16:50:39]bioMain.cc:108  pythonbiogeme Base_model_adv optimaDataset_12.dat
+[16:50:39]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[16:50:40]bioModelParser.cc:109  Base_model_adv.py exists
  Read sample in binary format from __bin_optimaDataset_12.dat *****
  Processing the sample file: __bin_optimaDataset_12.dat [00:00]
- Nbr of cores reported by the system: 4
- Nbr of cores used by biogeme: 2
+ Nbr of cores reported by the system: 2
+ Nbr of cores used by biogeme: 1
  Init. log-likelihood: -1880.82 [00:00]
      gmax Iter   radius        f(x)     Status       rhok nFree
- +5.32e+00    1 1.00e+00 +1.8808242e+03 ****Converg  +1.06e+00 3  ++ P
- +7.42e+00    2 2.00e+00 +1.3478057e+03 ****Converg  +1.13e+00 3  ++ P
- +2.29e+00    3 4.00e+00 +1.3054192e+03 ****Converg  +1.04e+00 3  ++ P
- +1.90e-01    4 8.00e+00 +1.3031669e+03 ****Converg  +9.86e-01 3  ++ P
- +8.34e-02    5 1.60e+01 +1.3008869e+03 ****Converg  +1.00e+00 3  ++ P
- +3.62e-04    6 3.20e+01 +1.3008857e+03 ****Converg  +1.00e+00 3  ++ P
- +3.99e-05    7 6.40e+01 +1.3008847e+03 ****Converg  +9.97e-01 3  ++ P
+ +5.32e+00    1 1.00e+00 +1.8808242e+03 ****Converg  +1.25e+00 8  ++ P
+ +6.40e+00    2 2.00e+00 +1.5374822e+03 ****Converg  +1.11e+00 8  ++ P
+ +2.68e+00    3 4.00e+00 +1.2413513e+03 ****Converg  +1.22e+00 8  ++ P
+ +1.25e+00    4 8.00e+00 +1.1822054e+03 ****Converg  +1.27e+00 8  ++ P
+ +4.89e-01    5 1.60e+01 +1.1532436e+03 ****Converg  +1.22e+00 8  ++ P
+ +2.35e-01    6 3.20e+01 +1.1333588e+03 ****Converg  +1.17e+00 8  ++ P
+ +6.43e-02    7 6.40e+01 +1.1282224e+03 ****Converg  +1.06e+00 8  ++ P
+ +6.65e-03    8 1.28e+02 +1.1277485e+03 ****Converg  +1.00e+00 8  ++ P
+ +2.80e-04    9 2.56e+02 +1.1277376e+03 ****Converg  +1.00e+00 8  ++ P
+ +2.22e-05   10 5.12e+02 +1.1277371e+03 ****Converg  +1.00e+00 8  ++ P
  Convergence reached...
- Run time interval: [15:47:18,15:47:18]
+ Run time interval: [16:50:40,16:50:40]
  Run time: 00:00
  Estimated parameters: 
-Constant1 = 0
+ASC_PT = 0
 
-BetaTT = 0.0162185
+Time_PT_in = 0.00186817
 
-BetaCost = -0.0476396
+Time_PT_out = -0.0324214
 
-Constant2 = 0.211433
+BetaCost = 0.000254066
+
+ASC_Nb_trans = -0.0353525
+
+ASC_PM  = 0.312651
+
+Time_car = -0.0226591
+
+ASC_SM = -0.186074
+
+Distance = -0.205593
 
 
- File simple_model~1_param.py created
+ File Base_model_adv~1_param.py created
  --------------------------------------------------------
- Directory: /Users/Vincent/Documents/GitHub/ModellingOfHumanBehaviour/Project
+ Directory: /Users/harold/Documents/GitHub/ModellingOfHumanBehaviour/Project
  The following files have been generated
  --------------------------------------------------------
  Debug files
@@ -48,9 +61,9 @@ Constant2 = 0.211433
       __biogeme.log: Log of all outputs
       pythonparam.html: Documentation of the parameters
       __parametersUsed.py: Values of the parameters actually used
-      simple_model~1.tex: Results in LaTeX format
+      Base_model_adv~1.tex: Results in LaTeX format
  --------------------------------------------------------
  Important files
  --------------------------------------------------------
-      simple_model~1_param.py: Results in Python format (to copy/paste for simulation)
-      simple_model~1.html: Results in HTML format
+      Base_model_adv~1_param.py: Results in Python format (to copy/paste for simulation)
+      Base_model_adv~1.html: Results in HTML format
