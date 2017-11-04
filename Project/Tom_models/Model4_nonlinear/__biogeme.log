@@ -1,0 +1,113 @@
+This file has automatically been generated.
+Sat Nov  4 12:56:37 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [12:56:37]bioMain.cc:108  pythonbiogeme Model4 ../data.dat
+[12:56:37]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[12:56:37]bioModelParser.cc:109  Model4.py exists
+ Read sample in binary format from __bin_data.dat *****
+ Processing the sample file: __bin_data.dat [00:00]
+ Nbr of cores reported by the system: 4
+ Nbr of cores used by biogeme: 2
+ Init. log-likelihood: -1880.82 [00:00]
+     gmax Iter   radius        f(x)     Status       rhok nFree
+ +5.32e+00    1 1.00e+00 +1.8808242e+03 ****Converg  +1.00e+00 17  ++ P
+ +5.21e+00    2 2.00e+00 +1.3780830e+03 ****Converg  +1.12e+00 17  ++ P
+ +2.54e+00    3 4.00e+00 +1.1758107e+03 ****Converg  +1.28e+00 17  ++ P
+ +1.33e+00    4 8.00e+00 +1.1097369e+03 ****Converg  +1.31e+00 17  ++ P
+ +6.68e-01    5 1.60e+01 +1.0686397e+03 ****Converg  +1.26e+00 17  ++ P
+ +3.23e-01    6 3.20e+01 +1.0473251e+03 ****NegCurv  -1.47e+01 17  -  P
+ +3.23e-01    7 1.60e+01 +1.0473251e+03 ****NegCurv  -2.29e+01 17  -  P
+ +3.23e-01    8 8.00e+00 +1.0473251e+03 ****NegCurv  -2.89e+01 17  -  P
+ +3.23e-01    9 4.00e+00 +1.0473251e+03 ****NegCurv  -2.72e+01 17  -  P
+ +3.23e-01   10 2.00e+00 +1.0473251e+03 ****OutTrReg -2.94e+01 17  -  P
+ +3.23e-01   11 1.00e+00 +1.0473251e+03 ****OutTrReg -1.63e+01 17  -  P
+ +3.23e-01   12 5.00e-01 +1.0473251e+03 ****OutTrReg -5.03e+00 17  -  P
+ +3.23e-01   13 2.50e-01 +1.0473251e+03 ****OutTrReg +2.59e-01 17  +  P
+ +2.98e+00   14 2.50e-01 +1.0440403e+03 ****Converg  +9.49e-01 17  ++ P
+ +4.13e-01   15 5.00e-01 +1.0316026e+03 ****OutTrReg -1.72e+00 17  -  P
+ +4.13e-01   16 2.50e-01 +1.0316026e+03 ****OutTrReg +5.62e-01 17  +  P
+ +1.31e+00   17 2.50e-01 +1.0292955e+03 ****Converg  +1.03e+00 17  ++ P
+ +1.07e-01   18 5.00e-01 +1.0268527e+03 ****OutTrReg -6.13e+00 17  -  P
+ +1.07e-01   19 2.50e-01 +1.0268527e+03 ****OutTrReg -2.98e-01 17  -  P
+ +1.07e-01   20 1.25e-01 +1.0268527e+03 ****OutTrReg +8.34e-01 17  +  P
+ +8.11e-01   21 1.25e-01 +1.0234224e+03 ****Converg  +9.81e-01 17  ++ P
+ +7.68e-02   22 2.50e-01 +1.0216018e+03 ****OutTrReg -2.00e+00 17  -  P
+ +7.68e-02   23 1.25e-01 +1.0216018e+03 ****OutTrReg +6.40e-01 17  +  P
+ +1.28e+00   24 1.25e-01 +1.0197480e+03 ****Converg  +9.92e-01 17  ++ P
+ +1.22e-01   25 2.50e-01 +1.0183192e+03 ****OutTrReg -3.81e-01 17  -  P
+ +1.22e-01   26 1.25e-01 +1.0183192e+03 ****OutTrReg +1.03e+00 17  ++ P
+ +1.59e-01   27 2.50e-01 +1.0152960e+03 ****Converg  -2.34e-01 17  -  P
+ +1.59e-01   28 9.47e-02 +1.0152960e+03 ****OutTrReg +8.39e-01 17  +  P
+ +7.49e-01   29 9.47e-02 +1.0136090e+03 ****Converg  +9.94e-01 17  ++ P
+ +5.23e-02   30 1.89e-01 +1.0130656e+03 ****Converg  +8.47e-01 17  +  P
+ +1.87e-01   31 1.89e-01 +1.0123608e+03 ****Converg  +9.98e-01 17  ++ P
+ +1.21e-02   32 3.79e-01 +1.0123264e+03 ****Converg  +1.03e+00 17  ++ P
+ +1.75e-02   33 7.58e-01 +1.0120000e+03 ****Converg  +1.00e+00 17  ++ P
+ +1.83e-03   34 1.52e+00 +1.0119998e+03 ****Converg  +1.01e+00 17  ++ P
+ +3.80e-04   35 3.03e+00 +1.0119973e+03 ****Converg  +1.00e+00 17  ++ P
+ +2.46e-05   36 6.06e+00 +1.0119972e+03 ****Converg  +1.00e+00 17  ++ P
+ Convergence reached...
+ Run time interval: [12:56:37,12:56:41]
+ Run time: 00:04
+ Estimated parameters: 
+ASC_PT = 0
+
+Beta_time_PT = 0.340512
+
+LAMBDA = 0.195565
+
+Beta_time_PT_walk = -0.0379395
+
+Beta_Cost = -0.0946424
+
+Beta_Age = -0.00290815
+
+ASC_PM  = 0.497329
+
+Beta_time_PM = -0.0183841
+
+Beta_inc_car_0_4 = 0.141419
+
+Beta_inc_car_4_8 = 0.00292321
+
+Beta_inc_car_8_12 = -0.273164
+
+Beta_inc_car_12_16 = 0.430963
+
+ASC_SM = 0.23876
+
+Beta_Distance = -0.199206
+
+Beta_inc_pt_0_4 = -0.213657
+
+Beta_inc_pt_4_8 = 0.440417
+
+Beta_inc_pt_8_12 = -0.498853
+
+Beta_inc_pt_12_16 = 0.59153
+
+
+ File Model4~6_param.py created
+ --------------------------------------------------------
+ Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/MyModels/Model4_nonlinear
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+      Model4~6.tex: Results in LaTeX format
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Model4~6_param.py: Results in Python format (to copy/paste for simulation)
+      Model4~6.html: Results in HTML format

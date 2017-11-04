@@ -1,0 +1,124 @@
+This file has automatically been generated.
+Sat Nov  4 13:50:02 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [13:50:02]bioMain.cc:108  pythonbiogeme Model5 ../data.dat
+[13:50:02]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[13:50:02]bioModelParser.cc:109  Model5.py exists
+ Read sample in binary format from __bin_data.dat *****
+ Processing the sample file: __bin_data.dat [00:00]
+ Nbr of cores reported by the system: 4
+ Nbr of cores used by biogeme: 2
+ Init. log-likelihood: -1852.27 [00:00]
+     gmax Iter   radius        f(x)     Status       rhok nFree
+ +5.40e+00    1 1.00e+00 +1.8522718e+03 ****Converg  +1.19e+00 14  ++ P
+ +6.39e+00    2 2.00e+00 +1.5645331e+03 ****Converg  +1.05e+00 14  ++ P
+ +7.26e+00    3 4.00e+00 +1.3772248e+03 ****Converg  +6.13e-01 14  +  P
+ +7.75e+00    4 4.00e+00 +1.2899805e+03 ****Converg  +1.13e+00 14  ++ P
+ +8.88e+00    5 8.00e+00 +1.1266175e+03 ****Converg  +1.06e+00 14  ++ P
+ +1.86e+00    6 1.60e+01 +1.1061890e+03 ****Converg  +1.22e+00 14  ++ P
+ +9.73e+00    7 3.20e+01 +1.0273719e+03 ****Converg  +1.04e+00 14  ++ P
+ +5.28e+00    8 6.40e+01 +1.0265083e+03 ****Converg  +1.21e+00 14  ++ P
+ +1.00e+01    9 1.28e+02 +9.9512522e+02 ****Converg  +1.03e+00 14  ++ P
+ +3.17e+00   10 2.56e+02 +9.9464173e+02 ****Converg  +1.05e+00 14  ++ P
+ +1.02e+01   11 5.12e+02 +9.8373284e+02 ****Converg  +1.00e+00 14  ++ P
+ +2.85e-01   12 1.02e+03 +9.8358614e+02 ****NegCurv  -1.08e+01 14  -  P
+ +2.85e-01   13 5.12e+02 +9.8358614e+02 ****NegCurv  -1.88e+01 14  -  P
+ +2.85e-01   14 2.56e+02 +9.8358614e+02 ****NegCurv  -2.96e+01 14  -  P
+ +2.85e-01   15 1.28e+02 +9.8358614e+02 ****NegCurv  -4.09e+01 14  -  P
+ +2.85e-01   16 6.40e+01 +9.8358614e+02 ****NegCurv  -4.92e+01 14  -  P
+ +2.85e-01   17 3.20e+01 +9.8358614e+02 ****NegCurv  -5.09e+01 14  -  P
+ +2.85e-01   18 1.60e+01 +9.8358614e+02 ****NegCurv  -4.35e+01 14  -  P
+ +2.85e-01   19 8.00e+00 +9.8358614e+02 ****NegCurv  -2.67e+01 14  -  P
+ +2.85e-01   20 4.00e+00 +9.8358614e+02 ****NegCurv  -1.85e+01 14  -  P
+ +2.85e-01   21 2.00e+00 +9.8358614e+02 ****OutTrReg -1.47e+01 14  -  P
+ +2.85e-01   22 1.00e+00 +9.8358614e+02 ****OutTrReg -8.92e+00 14  -  P
+ +2.85e-01   23 5.00e-01 +9.8358614e+02 ****OutTrReg -2.91e+00 14  -  P
+ +2.85e-01   24 2.50e-01 +9.8358614e+02 ****OutTrReg +1.86e-02 14  +  P
+ +1.02e+01   25 2.50e-01 +9.8324228e+02 ****Converg  +9.67e-01 14  ++ P
+ +9.04e-01   26 5.00e-01 +9.6664538e+02 ****Converg  +1.01e+00 14  ++ P
+ +8.84e-01   27 1.00e+00 +9.6226152e+02 ****Converg  +8.39e-01 14  +  P
+ +1.04e+01   28 1.00e+00 +9.5962640e+02 ****Converg  +1.01e+00 14  ++ P
+ +1.33e+00   29 2.00e+00 +9.5960034e+02 ****Converg  +9.99e-01 14  ++ P
+ +6.67e-02   30 4.00e+00 +9.5956021e+02 ****OutTrReg -2.10e+01 14  -  P
+ +6.67e-02   31 2.00e+00 +9.5956021e+02 ****OutTrReg -1.25e+01 14  -  P
+ +6.67e-02   32 1.00e+00 +9.5956021e+02 ****OutTrReg -1.26e+01 14  -  P
+ +6.67e-02   33 5.00e-01 +9.5956021e+02 ****OutTrReg -4.61e+00 14  -  P
+ +6.67e-02   34 2.50e-01 +9.5956021e+02 ****OutTrReg -7.32e-01 14  -  P
+ +6.67e-02   35 1.25e-01 +9.5956021e+02 ****OutTrReg +6.42e-01 14  +  P
+ +1.05e+01   36 1.25e-01 +9.5541480e+02 ****Converg  +9.89e-01 14  ++ P
+ +1.95e-01   37 2.50e-01 +9.5281029e+02 ****OutTrReg -3.30e-01 14  -  P
+ +1.95e-01   38 1.25e-01 +9.5281029e+02 ****OutTrReg +6.26e-01 14  +  P
+ +1.05e+01   39 1.25e-01 +9.4871663e+02 ****Converg  +9.89e-01 14  ++ P
+ +1.20e-01   40 2.50e-01 +9.4651453e+02 ****OutTrReg +8.60e-01 14  +  P
+ +1.07e+01   41 2.50e-01 +9.3768672e+02 ****Converg  +9.92e-01 14  ++ P
+ +2.65e-01   42 5.00e-01 +9.3688453e+02 ****OutTrReg +8.12e-01 14  +  P
+ +3.89e+00   43 5.00e-01 +9.2805085e+02 ****Converg  +1.01e+00 14  ++ P
+ +6.67e-02   44 1.00e+00 +9.2687365e+02 ****Converg  +1.07e+00 14  ++ P
+ +1.39e+00   45 2.00e+00 +9.2498048e+02 ****Converg  +1.00e+00 14  ++ P
+ +1.57e-02   46 4.00e+00 +9.2489361e+02 ****Converg  +9.86e-01 14  ++ P
+ +3.04e+00   47 8.00e+00 +9.2201997e+02 ****Converg  +1.00e+00 14  ++ P
+ +6.75e-03   48 1.60e+01 +9.2201413e+02 ****Converg  +9.92e-01 14  ++ P
+ +9.11e-01   49 3.20e+01 +9.2166965e+02 ****Converg  +1.00e+00 14  ++ P
+ +1.57e-03   50 6.40e+01 +9.2166925e+02 ****Converg  +1.00e+00 14  ++ P
+ +4.13e-02   51 1.28e+02 +9.2161525e+02 ****Converg  +1.00e+00 14  ++ P
+ +2.13e-04   52 2.56e+02 +9.2161525e+02 ****Converg  +1.00e+00 14  ++ P
+ +2.49e-05   53 5.12e+02 +9.2161520e+02 ****Converg  +1.00e+00 14  ++ P
+ Convergence reached...
+ Run time interval: [13:50:02,13:50:06]
+ Run time: 00:04
+ Estimated parameters: 
+ASC_PT = 0
+
+Beta_time_PT = 0.328916
+
+LAMBDA = 0.199383
+
+Beta_time_PT_walk = -0.0379046
+
+Beta_Cost = -0.0565444
+
+Beta_Income = -6.93144e-05
+
+Beta_Age = -0.00652522
+
+Beta_typeBus = -0.0992745
+
+Beta_have_ga = 1.59951
+
+ASC_PM  = 1.54599
+
+Beta_time_PM = -0.0140731
+
+Beta_multi_trips = -0.27076
+
+Beta_region = -0.192575
+
+ASC_SM = -0.379172
+
+Beta_Distance = -0.189393
+
+
+ File Model5~6_param.py created
+ --------------------------------------------------------
+ Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/MyModels/Model5_Final
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+      Model5~6.tex: Results in LaTeX format
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Model5~6_param.py: Results in Python format (to copy/paste for simulation)
+      Model5~6.html: Results in HTML format

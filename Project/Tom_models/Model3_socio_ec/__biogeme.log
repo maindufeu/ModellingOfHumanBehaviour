@@ -1,0 +1,80 @@
+This file has automatically been generated.
+Sat Nov  4 11:42:43 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [11:42:43]bioMain.cc:108  pythonbiogeme Model3 ../data.dat
+[11:42:43]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[11:42:43]bioModelParser.cc:109  Model3.py exists
+ Read sample in binary format from __bin_data.dat *****
+ Processing the sample file: __bin_data.dat [00:00]
+ Nbr of cores reported by the system: 4
+ Nbr of cores used by biogeme: 2
+ Init. log-likelihood: -1880.82 [00:00]
+     gmax Iter   radius        f(x)     Status       rhok nFree
+ +5.32e+00    1 1.00e+00 +1.8808242e+03 ****Converg  +1.19e+00 9  ++ P
+ +6.24e+00    2 2.00e+00 +1.6030047e+03 ****Converg  +1.05e+00 9  ++ P
+ +6.96e+00    3 4.00e+00 +1.4362851e+03 ****Converg  +5.51e-01 9  +  P
+ +7.30e+00    4 4.00e+00 +1.3696487e+03 ****Converg  +1.17e+00 9  ++ P
+ +8.38e+00    5 8.00e+00 +1.1929690e+03 ****Converg  +1.02e+00 9  ++ P
+ +5.66e+00    6 1.60e+01 +1.1878667e+03 ****Converg  +1.23e+00 9  ++ P
+ +9.14e+00    7 3.20e+01 +1.0935420e+03 ****Converg  +1.04e+00 9  ++ P
+ +3.16e+00    8 6.40e+01 +1.0928980e+03 ****Converg  +1.20e+00 9  ++ P
+ +9.42e+00    9 1.28e+02 +1.0611929e+03 ****Converg  +1.03e+00 9  ++ P
+ +2.32e+00   10 2.56e+02 +1.0608169e+03 ****Converg  +1.12e+00 9  ++ P
+ +9.50e+00   11 5.12e+02 +1.0529086e+03 ****Converg  +1.01e+00 9  ++ P
+ +1.14e-01   12 1.02e+03 +1.0528631e+03 ****Converg  +1.03e+00 9  ++ P
+ +9.54e+00   13 2.05e+03 +1.0485315e+03 ****Converg  +1.00e+00 9  ++ P
+ +5.61e-02   14 4.10e+03 +1.0485188e+03 ****Converg  +1.01e+00 9  ++ P
+ +3.38e-02   15 8.19e+03 +1.0485089e+03 ****Converg  +9.98e-01 9  ++ P
+ +1.08e-03   16 1.64e+04 +1.0485077e+03 ****Converg  +1.00e+00 9  ++ P
+ +6.98e-02   17 3.28e+04 +1.0484825e+03 ****Converg  +1.00e+00 9  ++ P
+ +9.56e-05   18 6.55e+04 +1.0484825e+03 ****Converg  +1.00e+00 9  ++ P
+ +1.02e-05   19 1.31e+05 +1.0484825e+03 ****Converg  +1.00e+00 9  ++ P
+ Convergence reached...
+ Run time interval: [11:42:43,11:42:44]
+ Run time: 00:01
+ Estimated parameters: 
+ASC_PT = 0
+
+Beta_time_PT = 0.01288
+
+Beta_time_PT_walk = -0.0336339
+
+Beta_Cost = -0.0945239
+
+Beta_Income = -5.57367e-05
+
+Beta_Age = -0.00806024
+
+ASC_PM  = -0.189337
+
+Beta_time_PM = -0.0165368
+
+ASC_SM = -0.740076
+
+Beta_Distance = -0.209659
+
+
+ File Model3~5_param.py created
+ --------------------------------------------------------
+ Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/MyModels/Model3_socio_ec
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+      Model3~4.tex: Results in LaTeX format
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Model3~5_param.py: Results in Python format (to copy/paste for simulation)
+      Model3~4.html: Results in HTML format
