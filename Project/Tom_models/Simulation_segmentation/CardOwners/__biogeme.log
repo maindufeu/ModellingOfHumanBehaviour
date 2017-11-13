@@ -1,0 +1,44 @@
+This file has automatically been generated.
+Mon Nov 13 16:55:58 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [16:55:58]bioMain.cc:108  pythonbiogeme Model5_cardOwner_sim ../../data.dat
+[16:55:58]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[16:55:58]bioModelParser.cc:109  Model5_cardOwner_sim.py exists
+[16:55:58]bioModelParser.cc:2098  Build dictionary
+[16:55:58]bioModelParser.cc:2135  Done
+ Read sample in binary format from __bin_data.dat *****
+ Processing the sample file: __bin_data.dat [00:00]
+ Nbr of cores reported by the system: 4
+ Nbr of cores used by biogeme: 2
+Warning:  Only one thread is used for simulation.
+ [200/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [400/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [600/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [800/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [1000/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [1200/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [1400/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [1600/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [1800/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ [2000/2039] Est. term. time: Mon Nov 13 16:55:58 2017 (in 00:00)
+ --------------------------------------------------------
+ Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/MyModels/Simulation_segmentation/CardOwners
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Model5_cardOwner_sim~1.html: Results in HTML format
