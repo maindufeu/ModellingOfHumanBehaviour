@@ -25,6 +25,8 @@ Beta_Distance= Beta('Beta_Distance',0,-10000,10000,0)
 Beta_Cost = Beta('Beta_Cost',0,-10000,10000,0)
 
 # Define here arithmetic expressions for name that are not directly available from the data
+pm_avail =  DefineVariable('pm_avail', ((CarAvail != 3)+(NbMoto>=1))>0 )
+bike_walk_avail =  DefineVariable('bike_walk_avail', ((distance_km)<8 + (NbBicy>0)*(distance_km)<16)>0)
 
 one  = DefineVariable('one',1)
 #----time
@@ -48,13 +50,15 @@ _Private_M = ASC_PM*one + Beta_time_PM*car_time + Beta_Cost* car_cost
 ## soft modes
 _soft_M = ASC_SM*one + Beta_Distance*distance_trip
 
-V = {0: _Public_T,1: _Private_M,2: _soft_M}
-av = {0: one,1: one,2: one}
+V = {0: _Public_T,1: _Private_M ,2: _soft_M }
+av = {0: one,1: pm_avail,2: bike_walk_avail}
 
 
 
 #Exclude
-BIOGEME_OBJECT.EXCLUDE = Choice   ==  -1
+BIOGEME_OBJECT.EXCLUDE = (Choice   ==  -1) + \
+                         ((Choice == 1) * (pm_avail != 1) > 0)+ \
+                          ((Choice == 2)* (bike_walk_avail!=1)>0)
 
 
 # MNL (Multinomial Logit model), with availability conditions

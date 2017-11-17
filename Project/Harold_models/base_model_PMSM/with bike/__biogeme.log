@@ -1,0 +1,44 @@
+This file has automatically been generated.
+Thu Nov  9 17:12:43 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:18:58 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [17:12:43]bioMain.cc:108  pythonbiogeme Simul_PMSM_costcar optimaDataset_12.dat
+[17:12:43]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[17:12:43]bioModelParser.cc:109  Simul_PMSM_costcar.py exists
+[17:12:43]bioModelParser.cc:2098  Build dictionary
+[17:12:43]bioModelParser.cc:2135  Done
+[17:12:43]bioModelParser.cc:290  Sensitivity analysis will be performed
+ Read sample in binary format from __bin_optimaDataset_12.dat *****
+ Processing the sample file: __bin_optimaDataset_12.dat [00:00]
+ Nbr of cores reported by the system: 2
+ Nbr of cores used by biogeme: 1
+ [170/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [340/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [510/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [680/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [850/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [1020/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [1190/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [1360/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [1530/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ [1700/1702] Est. term. time: Thu Nov  9 17:12:43 2017 (in 00:00)
+ --------------------------------------------------------
+ Directory: /Users/harold/Documents/GitHub/ModellingOfHumanBehaviour/Project/Harold_models/base_model_PMSM/with bike
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Simul_PMSM_costcar~1.html: Results in HTML format

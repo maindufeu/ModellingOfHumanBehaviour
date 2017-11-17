@@ -1,13 +1,57 @@
 This file has automatically been generated.
-Thu Nov  2 16:39:43 2017
+Thu Nov  9 21:16:32 2017
 Michel Bierlaire, EPFL
 
 biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
 Michel Bierlaire, EPFL
 
-Warning: [16:39:43]bioMain.cc:108  pythonbiogeme ../Base_model ../data.dat
-[16:39:43]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
-Warning: [16:39:43]bioModelParser.cc:86  Error: Filename contains directory path!
-Warning: [16:39:43]bioMain.cc:163  Error: Filename contains directory path!
-Warning: [16:39:43]bioMain.cc:100  Error: Filename contains directory path!
-Warning: [16:39:43]pybiogeme.cc:27  Error: Filename contains directory path!
+Warning: [21:16:32]bioMain.cc:108  pythonbiogeme Base_model ../data.dat
+[21:16:32]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[21:16:32]bioModelParser.cc:109  Base_model.py exists
+ Read sample file: ../data.dat
+ Processing the sample file: ../data.dat [00:00]
+ Nbr of cores reported by the system: 4
+ Nbr of cores used by biogeme: 2
+ Init. log-likelihood: -1380.54 [00:00]
+     gmax Iter   radius        f(x)     Status       rhok nFree
+ +7.24e+00    1 1.00e+00 +1.3805366e+03 ****Converg  +1.09e+00 4  ++ P
+ +2.42e+00    2 2.00e+00 +1.2683524e+03 ****Converg  +1.03e+00 4  ++ P
+ +8.26e-02    3 4.00e+00 +1.0891376e+03 ****Converg  +1.05e+00 4  ++ P
+ +1.59e-03    4 8.00e+00 +1.0856658e+03 ****Converg  +1.01e+00 4  ++ P
+ +2.76e-04    5 1.60e+01 +1.0856436e+03 ****Converg  +1.00e+00 4  ++ P
+ Convergence reached...
+ Run time interval: [21:16:32,21:16:32]
+ Run time: 00:00
+ Estimated parameters: 
+ASC_PT = 0
+
+Time = -0.0108352
+
+Cost = 0.0337039
+
+ASC_PM  = 0.834256
+
+ASC_SM = -0.926068
+
+
+ File Base_model_param.py created
+ --------------------------------------------------------
+ Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/MyModels/BaseModel
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+      __bin_data.dat: Data file in a binary format
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+      Base_model.tex: Results in LaTeX format
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Base_model_param.py: Results in Python format (to copy/paste for simulation)
+      Base_model.html: Results in HTML format

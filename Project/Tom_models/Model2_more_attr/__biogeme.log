@@ -1,50 +1,50 @@
 This file has automatically been generated.
-Sat Nov  4 10:55:31 2017
+Thu Nov  9 21:14:27 2017
 Michel Bierlaire, EPFL
 
 biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
 Michel Bierlaire, EPFL
 
-Warning: [10:55:31]bioMain.cc:108  pythonbiogeme Model2 ../data.dat
-[10:55:31]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
-[10:55:31]bioModelParser.cc:109  Model2.py exists
- Read sample in binary format from __bin_data.dat *****
- Processing the sample file: __bin_data.dat [00:00]
+Warning: [21:14:27]bioMain.cc:108  pythonbiogeme Model2 ../data.dat
+[21:14:27]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[21:14:27]bioModelParser.cc:109  Model2.py exists
+ Read sample file: ../data.dat
+ Processing the sample file: ../data.dat [00:00]
  Nbr of cores reported by the system: 4
  Nbr of cores used by biogeme: 2
- Init. log-likelihood: -1880.82 [00:00]
+ Init. log-likelihood: -1380.54 [00:00]
      gmax Iter   radius        f(x)     Status       rhok nFree
- +5.32e+00    1 1.00e+00 +1.8808242e+03 ****Converg  +1.24e+00 7  ++ P
- +6.45e+00    2 2.00e+00 +1.5507325e+03 ****Converg  +1.09e+00 7  ++ P
- +2.77e+00    3 4.00e+00 +1.2313571e+03 ****Converg  +1.30e+00 7  ++ P
- +1.20e+00    4 8.00e+00 +1.1840044e+03 ****Converg  +1.32e+00 7  ++ P
- +5.65e-01    5 1.60e+01 +1.1511958e+03 ****Converg  +1.26e+00 7  ++ P
- +2.26e-01    6 3.20e+01 +1.1333277e+03 ****Converg  +1.16e+00 7  ++ P
- +6.23e-02    7 6.40e+01 +1.1283294e+03 ****Converg  +1.06e+00 7  ++ P
- +7.78e-03    8 1.28e+02 +1.1279031e+03 ****Converg  +1.00e+00 7  ++ P
- +1.82e-04    9 2.56e+02 +1.1278975e+03 ****Converg  +1.00e+00 7  ++ P
+ +7.24e+00    1 1.00e+00 +1.3805366e+03 ****Converg  +1.22e+00 7  ++ P
+ +4.81e+00    2 2.00e+00 +1.1208947e+03 ****Converg  +1.14e+00 7  ++ P
+ +7.29e-01    3 4.00e+00 +1.0011771e+03 ****Converg  +1.30e+00 7  ++ P
+ +3.39e-01    4 8.00e+00 +9.7853708e+02 ****Converg  +1.36e+00 7  ++ P
+ +2.15e-01    5 1.60e+01 +9.5474431e+02 ****Converg  +1.31e+00 7  ++ P
+ +1.14e-01    6 3.20e+01 +9.3437769e+02 ****Converg  +1.20e+00 7  ++ P
+ +3.83e-02    7 6.40e+01 +9.2554827e+02 ****Converg  +1.09e+00 7  ++ P
+ +1.03e-02    8 1.28e+02 +9.2398692e+02 ****Converg  +1.01e+00 7  ++ P
+ +2.45e-04    9 2.56e+02 +9.2394868e+02 ****Converg  +1.00e+00 7  ++ P
  Convergence reached...
- Run time interval: [10:55:31,10:55:31]
+ Run time interval: [21:14:28,21:14:28]
  Run time: 00:00
  Estimated parameters: 
 ASC_PT = 0
 
-Beta_time_PT = 0.000514877
+Beta_time_PT = 0.000670054
 
-Beta_time_PT_walk = -0.0330849
+Beta_time_PT_walk = -0.0338389
 
-Beta_Cost = 0.00209324
+Beta_Cost = -0.000624341
 
-ASC_PM  = 0.303749
+ASC_PM  = 0.408421
 
-Beta_time_PM = -0.0224402
+Beta_time_PM = -0.0232024
 
-ASC_SM = -0.194819
+ASC_SM = 1.22145
 
-Beta_Distance = -0.205361
+Beta_Distance = -0.659956
 
 
- File Model2~1_param.py created
+ File Model2_param.py created
  --------------------------------------------------------
  Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/MyModels/Model2_more_attr
  The following files have been generated
@@ -52,15 +52,16 @@ Beta_Distance = -0.205361
  Debug files
  --------------------------------------------------------
       headers.py: List of headers of the data file (biogeme use only)
+      __bin_data.dat: Data file in a binary format
  --------------------------------------------------------
  Useful files
  --------------------------------------------------------
       __biogeme.log: Log of all outputs
       pythonparam.html: Documentation of the parameters
       __parametersUsed.py: Values of the parameters actually used
-      Model2~1.tex: Results in LaTeX format
+      Model2.tex: Results in LaTeX format
  --------------------------------------------------------
  Important files
  --------------------------------------------------------
-      Model2~1_param.py: Results in Python format (to copy/paste for simulation)
-      Model2~1.html: Results in HTML format
+      Model2_param.py: Results in Python format (to copy/paste for simulation)
+      Model2.html: Results in HTML format

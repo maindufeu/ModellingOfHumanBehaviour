@@ -1,64 +1,77 @@
 This file has automatically been generated.
-Sat Nov  4 11:42:43 2017
+Thu Nov  9 21:14:58 2017
 Michel Bierlaire, EPFL
 
 biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
 Michel Bierlaire, EPFL
 
-Warning: [11:42:43]bioMain.cc:108  pythonbiogeme Model3 ../data.dat
-[11:42:43]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
-[11:42:43]bioModelParser.cc:109  Model3.py exists
- Read sample in binary format from __bin_data.dat *****
- Processing the sample file: __bin_data.dat [00:00]
+Warning: [21:14:58]bioMain.cc:108  pythonbiogeme Model3 ../data.dat
+[21:14:58]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[21:14:58]bioModelParser.cc:109  Model3.py exists
+ Read sample file: ../data.dat
+ Processing the sample file: ../data.dat [00:00]
  Nbr of cores reported by the system: 4
  Nbr of cores used by biogeme: 2
- Init. log-likelihood: -1880.82 [00:00]
+ Init. log-likelihood: -1380.54 [00:00]
      gmax Iter   radius        f(x)     Status       rhok nFree
- +5.32e+00    1 1.00e+00 +1.8808242e+03 ****Converg  +1.19e+00 9  ++ P
- +6.24e+00    2 2.00e+00 +1.6030047e+03 ****Converg  +1.05e+00 9  ++ P
- +6.96e+00    3 4.00e+00 +1.4362851e+03 ****Converg  +5.51e-01 9  +  P
- +7.30e+00    4 4.00e+00 +1.3696487e+03 ****Converg  +1.17e+00 9  ++ P
- +8.38e+00    5 8.00e+00 +1.1929690e+03 ****Converg  +1.02e+00 9  ++ P
- +5.66e+00    6 1.60e+01 +1.1878667e+03 ****Converg  +1.23e+00 9  ++ P
- +9.14e+00    7 3.20e+01 +1.0935420e+03 ****Converg  +1.04e+00 9  ++ P
- +3.16e+00    8 6.40e+01 +1.0928980e+03 ****Converg  +1.20e+00 9  ++ P
- +9.42e+00    9 1.28e+02 +1.0611929e+03 ****Converg  +1.03e+00 9  ++ P
- +2.32e+00   10 2.56e+02 +1.0608169e+03 ****Converg  +1.12e+00 9  ++ P
- +9.50e+00   11 5.12e+02 +1.0529086e+03 ****Converg  +1.01e+00 9  ++ P
- +1.14e-01   12 1.02e+03 +1.0528631e+03 ****Converg  +1.03e+00 9  ++ P
- +9.54e+00   13 2.05e+03 +1.0485315e+03 ****Converg  +1.00e+00 9  ++ P
- +5.61e-02   14 4.10e+03 +1.0485188e+03 ****Converg  +1.01e+00 9  ++ P
- +3.38e-02   15 8.19e+03 +1.0485089e+03 ****Converg  +9.98e-01 9  ++ P
- +1.08e-03   16 1.64e+04 +1.0485077e+03 ****Converg  +1.00e+00 9  ++ P
- +6.98e-02   17 3.28e+04 +1.0484825e+03 ****Converg  +1.00e+00 9  ++ P
- +9.56e-05   18 6.55e+04 +1.0484825e+03 ****Converg  +1.00e+00 9  ++ P
- +1.02e-05   19 1.31e+05 +1.0484825e+03 ****Converg  +1.00e+00 9  ++ P
+ +7.24e+00    1 1.00e+00 +1.3805366e+03 ****Converg  +1.11e+00 19  ++ P
+ +4.24e+00    2 2.00e+00 +1.0129248e+03 ****Converg  +1.25e+00 19  ++ P
+ +1.38e+00    3 4.00e+00 +9.1959280e+02 ****Converg  +1.21e+00 19  ++ P
+ +4.51e-01    4 8.00e+00 +8.7150738e+02 ****Converg  +1.36e+00 19  ++ P
+ +2.41e-01    5 1.60e+01 +8.4808536e+02 ****Converg  +1.32e+00 19  ++ P
+ +2.16e-01    6 3.20e+01 +8.2707333e+02 ****Converg  +1.20e+00 19  ++ P
+ +1.68e-01    7 6.40e+01 +8.1681019e+02 ****Converg  +1.09e+00 19  ++ P
+ +3.40e-02    8 1.28e+02 +8.1495678e+02 ****Converg  +1.05e+00 19  ++ P
+ +2.00e-02    9 2.56e+02 +8.1270135e+02 ****Converg  +9.96e-01 19  ++ P
+ +1.44e-03   10 5.12e+02 +8.1250159e+02 ****Converg  +1.01e+00 19  ++ P
+ +6.10e-04   11 1.02e+03 +8.1242440e+02 ****Converg  +1.00e+00 19  ++ P
+ +4.25e-05   12 2.05e+03 +8.1242418e+02 ****Converg  +1.00e+00 19  ++ P
  Convergence reached...
- Run time interval: [11:42:43,11:42:44]
+ Run time interval: [21:14:59,21:15:00]
  Run time: 00:01
  Estimated parameters: 
 ASC_PT = 0
 
-Beta_time_PT = 0.01288
+Beta_time_PT = 0.00915327
 
-Beta_time_PT_walk = -0.0336339
+Beta_time_PT_walk = -0.0325237
 
-Beta_Cost = -0.0945239
+Beta_Cost = -0.0759791
 
-Beta_Income = -5.57367e-05
+Beta_Age1 = 0.0570478
 
-Beta_Age = -0.00806024
+Beta_Age2 = -0.0102873
 
-ASC_PM  = -0.189337
+Beta_Age3 = 0.00157186
 
-Beta_time_PM = -0.0165368
+Beta_urb = 0.673723
 
-ASC_SM = -0.740076
+Beta_TripWork = 0.349722
 
-Beta_Distance = -0.209659
+Beta_TripLeisure = -0.282636
+
+ASC_PM  = 0.469475
+
+Beta_time_PM = -0.0190094
+
+Beta_rural = -0.960377
+
+Beta_roman = 1.14569
+
+Beta_german = 0.21971
+
+ASC_SM = 1.44944
+
+Beta_Distance = -0.712484
+
+Beta_Age1_walk = -1.40397
+
+Beta_Age2_walk = -0.00199755
+
+Beta_Age3_walk = -0.00960892
 
 
- File Model3~5_param.py created
+ File Model3_param.py created
  --------------------------------------------------------
  Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/MyModels/Model3_socio_ec
  The following files have been generated
@@ -66,15 +79,16 @@ Beta_Distance = -0.209659
  Debug files
  --------------------------------------------------------
       headers.py: List of headers of the data file (biogeme use only)
+      __bin_data.dat: Data file in a binary format
  --------------------------------------------------------
  Useful files
  --------------------------------------------------------
       __biogeme.log: Log of all outputs
       pythonparam.html: Documentation of the parameters
       __parametersUsed.py: Values of the parameters actually used
-      Model3~4.tex: Results in LaTeX format
+      Model3.tex: Results in LaTeX format
  --------------------------------------------------------
  Important files
  --------------------------------------------------------
-      Model3~5_param.py: Results in Python format (to copy/paste for simulation)
-      Model3~4.html: Results in HTML format
+      Model3_param.py: Results in Python format (to copy/paste for simulation)
+      Model3.html: Results in HTML format
