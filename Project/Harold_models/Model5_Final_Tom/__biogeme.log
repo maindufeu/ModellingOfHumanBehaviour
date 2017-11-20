@@ -1,0 +1,44 @@
+This file has automatically been generated.
+Sun Nov 19 15:30:58 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:18:58 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [15:30:58]bioMain.cc:108  pythonbiogeme Model5_simulation_2 data.dat
+[15:30:58]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[15:30:58]bioModelParser.cc:109  Model5_simulation_2.py exists
+[15:30:58]bioModelParser.cc:2098  Build dictionary
+[15:30:58]bioModelParser.cc:2135  Done
+ Read sample file: data.dat
+ Processing the sample file: data.dat [00:00]
+ Nbr of cores reported by the system: 2
+ Nbr of cores used by biogeme: 1
+ [160/1695] Est. term. time: Sun Nov 19 15:30:58 2017 (in 00:00)
+ [320/1695] Est. term. time: Sun Nov 19 15:31:03 2017 (in 00:04)
+ [480/1695] Est. term. time: Sun Nov 19 15:31:01 2017 (in 00:02)
+ [640/1695] Est. term. time: Sun Nov 19 15:31:00 2017 (in 00:01)
+ [800/1695] Est. term. time: Sun Nov 19 15:31:00 2017 (in 00:01)
+ [960/1695] Est. term. time: Sun Nov 19 15:30:59 2017 (in 00:00)
+ [1120/1695] Est. term. time: Sun Nov 19 15:30:59 2017 (in 00:00)
+ [1280/1695] Est. term. time: Sun Nov 19 15:30:59 2017 (in 00:00)
+ [1440/1695] Est. term. time: Sun Nov 19 15:30:59 2017 (in 00:00)
+ [1600/1695] Est. term. time: Sun Nov 19 15:30:59 2017 (in 00:00)
+ --------------------------------------------------------
+ Directory: /Users/harold/Documents/GitHub/ModellingOfHumanBehaviour/Project/Harold_models/Model5_Final
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+      __bin_data.dat: Data file in a binary format
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Model5_simulation_2.html: Results in HTML format
