@@ -53,7 +53,7 @@ distance_trip=DefineVariable('distance_trip',distance_km)
 reported_time=DefineVariable('reported_time',ReportedDuration)
 #---cost
 car_cost=DefineVariable('car_cost',CostCar)
-PT_cost=DefineVariable('PT',MarginalCostPT)  #marginal tiens en compte le demi tarif etc
+PT_cost=DefineVariable('PT_cost',MarginalCostPT)  #marginal tiens en compte le demi tarif etc
 #socioeco
 CalcIncome= DefineVariable('CalcIncome', CalculatedIncome )
 age1= DefineVariable('age1', age*(age<=25))
@@ -61,6 +61,8 @@ age2= DefineVariable('age2', age*(25<age<=65))
 age3= DefineVariable('age3', age*(age>65))
 
 urb= DefineVariable('urb',1*(UrbRur==1))
+pt_total_time = DefineVariable('pt_total_time', TimePT)
+pt_TOT_time = DefineVariable('pt_TOT_time', TimePT + WaitingTimePT + WalkingTimePT)
 
 roman= DefineVariable('roman',1*(Region<4))
 
@@ -69,8 +71,8 @@ TripLeisure=DefineVariable('TripLeisure',1*(TripPurpose==3))
 # Utilities
 ## public transport
 _Public_T = ASC_PT*one \
-            + Beta_time_PT*pt_transp_time\
-            + Beta_time_PT_walk*(pt_walk_time+pt_wait_time )\
+            + Beta_time_PT*(pt_TOT_time - pt_walk_time - pt_wait_time)\
+            + Beta_time_PT_walk*(pt_TOT_time - pt_transp_time)\
             + Beta_Cost_age1* PT_cost*age1\
             + Beta_Cost_age2* PT_cost*age2\
             + Beta_Cost_age3* PT_cost*age3\

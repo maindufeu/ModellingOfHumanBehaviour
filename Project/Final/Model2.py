@@ -40,7 +40,7 @@ reported_time=DefineVariable('reported_time',ReportedDuration)
 #---cost
 car_cost=DefineVariable('car_cost',CostCar)
 PT_cost=DefineVariable('PT',CostPT)
-
+pt_TOT_time = DefineVariable('pt_TOT_time', TimePT + WaitingTimePT + WalkingTimePT)
 # Utilities
 ## public transport
 _Public_T = ASC_PT*one + Beta_time_PT*pt_transp_time+Beta_time_PT_walk*(pt_walk_time+pt_wait_time )+ Beta_Cost* PT_cost

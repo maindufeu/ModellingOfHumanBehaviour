@@ -1,0 +1,45 @@
+This file has automatically been generated.
+Tue Nov 21 17:45:24 2017
+Michel Bierlaire, EPFL
+
+biogeme 2.6a [Mon Apr 24 10:19:43 BST 2017]
+Michel Bierlaire, EPFL
+
+Warning: [17:45:24]bioMain.cc:108  pythonbiogeme Model4_sim data.dat
+[17:45:24]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[17:45:24]bioModelParser.cc:109  Model4_sim.py exists
+[17:45:24]bioModelParser.cc:2098  Build dictionary
+[17:45:25]bioModelParser.cc:2135  Done
+[17:45:25]bioModelParser.cc:290  Sensitivity analysis will be performed
+ Read sample in binary format from __bin_data.dat *****
+ Processing the sample file: __bin_data.dat [00:00]
+ Nbr of cores reported by the system: 4
+ Nbr of cores used by biogeme: 2
+Warning:  Only one thread is used for simulation.
+ [160/1695] Est. term. time: Tue Nov 21 17:45:46 2017 (in 00:19)
+ [320/1695] Est. term. time: Tue Nov 21 17:45:46 2017 (in 00:17)
+ [480/1695] Est. term. time: Tue Nov 21 17:45:46 2017 (in 00:15)
+ [640/1695] Est. term. time: Tue Nov 21 17:45:43 2017 (in 00:11)
+ [800/1695] Est. term. time: Tue Nov 21 17:45:44 2017 (in 00:10)
+ [960/1695] Est. term. time: Tue Nov 21 17:45:44 2017 (in 00:08)
+ [1120/1695] Est. term. time: Tue Nov 21 17:45:44 2017 (in 00:06)
+ [1280/1695] Est. term. time: Tue Nov 21 17:45:44 2017 (in 00:04)
+ [1440/1695] Est. term. time: Tue Nov 21 17:45:45 2017 (in 00:03)
+ [1600/1695] Est. term. time: Tue Nov 21 17:45:45 2017 (in 00:01)
+ --------------------------------------------------------
+ Directory: /Users/Vincent/Documents/GitHub/ModellingOfHumanBehaviour/Project/Final
+ The following files have been generated
+ --------------------------------------------------------
+ Debug files
+ --------------------------------------------------------
+      headers.py: List of headers of the data file (biogeme use only)
+ --------------------------------------------------------
+ Useful files
+ --------------------------------------------------------
+      __biogeme.log: Log of all outputs
+      pythonparam.html: Documentation of the parameters
+      __parametersUsed.py: Values of the parameters actually used
+ --------------------------------------------------------
+ Important files
+ --------------------------------------------------------
+      Model4_sim.html: Results in HTML format
