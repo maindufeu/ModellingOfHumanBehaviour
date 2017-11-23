@@ -106,7 +106,7 @@ inc12_16 = DefineVariable('inc12_16',max(0,min(ScaledIncome-12,4)))
 # Utilities
 ## public transport
 _Public_T = ASC_PT*one \
-            + Beta_time_PT*(((pt_TOT_time - pt_walk_time - pt_wait_time**LAMBDA)-1)/LAMBDA) \
+            + Beta_time_PT*((((pt_TOT_time - pt_walk_time - pt_wait_time)**LAMBDA)-1)/LAMBDA) \
             + Beta_time_PT_walk*(pt_TOT_time - pt_transp_time)\
             + Beta_Cost_age1* PT_cost*age1\
             + Beta_Cost_age2* PT_cost*age2\
@@ -161,9 +161,9 @@ probSM = bioLogit(V,av,2)
 #Elasticity
 
 BIOGEME_OBJECT.STATISTICS['Normalization for Elasticities PM'] = Sum(AdjWeight*probPM,'obsIter')
-norm_el_PM = 1099.6
+norm_el_PM = 5.21668
 BIOGEME_OBJECT.STATISTICS['Normalization for Elasticities PT'] = Sum(AdjWeight*probPT,'obsIter')
-norm_el_PT = 515.667
+norm_el_PT = 1684.57
 elas_PM_time = Derive(probPM,'car_time')*(car_time/probPM)
 elas_PT_time = Derive(probPT,'pt_TOT_time')*(pt_TOT_time/probPT) #ZERO
 elas_PM_cost = Derive(probPM,'car_cost')*(car_cost/probPM)
