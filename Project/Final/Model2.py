@@ -30,20 +30,18 @@ bike_walk_avail =  DefineVariable('bike_walk_avail', ((distance_km)<8 + (NbBicy>
 one  = DefineVariable('one',1)
 #----time
 car_time  = DefineVariable('car_time', TimeCar )
-pt_total_time = DefineVariable('pt_total_time', TimePT)
-pt_wait_time = DefineVariable('pt_wait_time', WaitingTimePT)
-pt_walk_time = DefineVariable('pt_walk_time',WalkingTimePT)
-pt_transp_time= DefineVariable('pt_transp_time',InVehicleTime)
+
 
 distance_trip=DefineVariable('distance_trip',distance_km)
 reported_time=DefineVariable('reported_time',ReportedDuration)
 #---cost
 car_cost=DefineVariable('car_cost',CostCar)
 PT_cost=DefineVariable('PT',CostPT)
-pt_TOT_time = DefineVariable('pt_TOT_time', TimePT + WaitingTimePT + WalkingTimePT)
+pt_ww_time = DefineVariable('pt_ww_time',  WaitingTimePT + WalkingTimePT)
+
 # Utilities
 ## public transport
-_Public_T = ASC_PT*one + Beta_time_PT*pt_transp_time+Beta_time_PT_walk*(pt_walk_time+pt_wait_time )+ Beta_Cost* PT_cost
+_Public_T = ASC_PT*one + Beta_time_PT*(InVehicleTime)+ Beta_time_PT_walk*(pt_ww_time)+ Beta_Cost* PT_cost
 ## private mode
 _Private_M = ASC_PM*one + Beta_time_PM*car_time + Beta_Cost* car_cost
 ## soft modes

@@ -53,10 +53,9 @@ bike_walk_avail =  DefineVariable('bike_walk_avail', ((distance_km)<8 + (NbBicy>
 one  = DefineVariable('one',1)
 #----time
 car_time  = DefineVariable('car_time', TimeCar )
-pt_total_time = DefineVariable('pt_total_time', TimePT)
-pt_wait_time = DefineVariable('pt_wait_time', WaitingTimePT)
-pt_walk_time = DefineVariable('pt_walk_time',WalkingTimePT)
+pt_ww_time = DefineVariable('pt_ww_time',  WaitingTimePT + WalkingTimePT)
 pt_transp_time= DefineVariable('pt_transp_time',InVehicleTime*(InVehicleTime>0))
+
 distance_trip=DefineVariable('distance_trip',distance_km)
 reported_time=DefineVariable('reported_time',ReportedDuration)
 #---cost
@@ -84,7 +83,7 @@ Have_GA_LT = DefineVariable('Have_GA_LT',((GenAbST==1)+(LineRelST ==1)!=1))
 ## public transport
 _Public_T = ASC_PT*one \
             +Beta_time_PT*(((pt_transp_time**LAMBDA)-1)/LAMBDA) \
-            +Beta_time_PT_walk*(pt_walk_time+pt_wait_time )\
+            +Beta_time_PT_walk*(pt_ww_time)\
             + Beta_Cost_age1* PT_cost*age1*Have_GA_LT\
             + Beta_Cost_age2* PT_cost*age2*Have_GA_LT\
             + Beta_Cost_age3* PT_cost*age3*Have_GA_LT\

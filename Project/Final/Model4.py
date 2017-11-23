@@ -67,9 +67,7 @@ bike_walk_avail =  DefineVariable('bike_walk_avail', ((distance_km)<8 + (NbBicy>
 one  = DefineVariable('one',1)
 #----time
 car_time  = DefineVariable('car_time', TimeCar )
-pt_total_time = DefineVariable('pt_total_time', TimePT)
-pt_wait_time = DefineVariable('pt_wait_time', WaitingTimePT)
-pt_walk_time = DefineVariable('pt_walk_time',WalkingTimePT)
+pt_ww_time = DefineVariable('pt_ww_time',  WaitingTimePT + WalkingTimePT)
 pt_transp_time= DefineVariable('pt_transp_time',InVehicleTime*(InVehicleTime>0))
 
 distance_trip=DefineVariable('distance_trip',distance_km)
@@ -101,7 +99,7 @@ inc12_16 = DefineVariable('inc12_16',max(0,min(ScaledIncome-12,4)))
 ## public transport
 _Public_T = ASC_PT*one \
             + Beta_time_PT*(((pt_transp_time**LAMBDA)-1)/LAMBDA) \
-            + Beta_time_PT_walk*(pt_walk_time+pt_wait_time )\
+            + Beta_time_PT_walk*(pt_ww_time)\
             + Beta_Cost_age1* PT_cost*age1\
             + Beta_Cost_age2* PT_cost*age2\
             + Beta_Cost_age3* PT_cost*age3\
@@ -121,7 +119,8 @@ _Private_M = ASC_PM*one \
 ## soft modes
 _soft_M =  \
          Beta_Distance*distance_trip\
-        + Beta_inc_car_0_4*inc0_4 + Beta_inc_car_4_8*inc4_8 + Beta_inc_car_8_12*inc8_12 + Beta_inc_car_12_16*inc12_16
+        + Beta_inc_car_0_4*inc0_4 + Beta_inc_car_4_8*inc4_8 \
+        + Beta_inc_car_8_12*inc8_12 + Beta_inc_car_12_16*inc12_16
 
 V = {0: _Public_T,1: _Private_M ,2: _soft_M }
 av = {0: one,1: pm_avail,2: bike_walk_avail}

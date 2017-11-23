@@ -1,7 +1,7 @@
 # This file has automatically been generated
-# biogeme 2.6a [Mon Apr 24 10:21:39 BST 2017]
+# biogeme 2.6a [Mon Apr 24 10:21:29 BST 2017]
 # <a href='http://people.epfl.ch/michel.bierlaire'>Michel Bierlaire</a>, <a href='http://transp-or.epfl.ch'>Transport and Mobility Laboratory</a>, <a href='http://www.epfl.ch'>Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne (EPFL)</a>
-# Tue Nov 21 17:09:05 2017</p>
+# Thu Nov 23 17:56:55 2017</p>
 #
 ASC_PT = Beta('ASC_PT',-1.22145,-10000,10000,0,'ASC_PT' )
 

@@ -4,9 +4,9 @@
 <head>
 <script src="http://transp-or.epfl.ch/biogeme/sorttable.js"></script>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-<title>Model3.html - Report from biogeme 2.6a [Mon Apr 24 10:21:39 BST 2017]</title>
+<title>Model3.html - Report from biogeme 2.6a [Mon Apr 24 10:21:29 BST 2017]</title>
 <meta name="keywords" content="biogeme, discrete choice, random utility">
-<meta name="description" content="Report from biogeme 2.6a [Mon Apr 24 10:21:39 BST 2017]">
+<meta name="description" content="Report from biogeme 2.6a [Mon Apr 24 10:21:29 BST 2017]">
 <meta name="author" content="Michel Bierlaire">
 <style type=text/css>
 <!--table
@@ -26,15 +26,15 @@
 </head>
 
 <body bgcolor="#ffffff">
-<p>biogeme 2.6a [Mon Apr 24 10:21:39 BST 2017]</p>
+<p>biogeme 2.6a [Mon Apr 24 10:21:29 BST 2017]</p>
 <p>Home page: <a href='http://biogeme.epfl.ch' target='_blank'>http://biogeme.epfl.ch</a></p>
 <p>Submit questions to <a href='https://groups.google.com/d/forum/biogeme' target='_blank'>https://groups.google.com/d/forum/biogeme</a></p>
 <p><a href='http://people.epfl.ch/michel.bierlaire'>Michel Bierlaire</a>, <a href='http://transp-or.epfl.ch'>Transport and Mobility Laboratory</a>, <a href='http://www.epfl.ch'>Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne (EPFL)</a></p>
 <p>This file has automatically been generated on
-Tue Nov 21 17:21:18 2017</p>
+Thu Nov 23 17:35:18 2017</p>
 <p>If you drag this HTML file into the Calc application of <a href='http://www.openoffice.org/' target='_blank'>OpenOffice</a>, or the spreadsheet of <a href='https://www.libreoffice.org/' target='_blank'>LibreOffice</a>, you will be able to perform additional calculations.</p><table><tr class=biostyle><td align=right><strong>Report file</strong>:	</td><td>Model3.html</td></tr><tr class=biostyle><td align=right><strong>Sample file</strong>:	</td><td>__bin_data.dat</td></tr></table><h1>Formulas</h1>
 <table border="0">
-<tr class=biostyle><td align=right><strong><em>Opt1:</em></strong>	</td><td><em>ASC_PT * one + Beta_time_PT * pt_transp_time + Beta_time_PT_walk * ( pt_walk_time + pt_wait_time ) + ( Beta_Cost_age1 * PT ) * age1 + ( Beta_Cost_age2 * PT ) * age2 + ( Beta_Cost_age3 * PT ) * age3 + Beta_Age1_PT * age1 + Beta_Age2_PT * age2 + Beta_urb * urb + Beta_TripWork * Tripwork + Beta_TripLeisure * TripLeisure</em></td></tr><tr class=biostyle><td align=right><strong><em>Opt2:</em></strong>	</td><td><em>ASC_PM  * one + Beta_time_PM * car_time + ( Beta_Cost_age1 * car_cost ) * age1 + ( Beta_Cost_age2 * car_cost ) * age2 + ( Beta_Cost_age3 * car_cost ) * age3 + Beta_Age1_PM * age1 + Beta_Age2_PM * age2 + Beta_urb * urb + Beta_roman * roman</em></td></tr><tr class=biostyle><td align=right><strong><em>Opt3:</em></strong>	</td><td><em>Beta_Distance * distance_trip</em></td></tr></table>
+<tr class=biostyle><td align=right><strong><em>Opt1:</em></strong>	</td><td><em>ASC_PT * one + Beta_time_PT * InVehicleTime + Beta_time_PT_walk * pt_ww_time + ( Beta_Cost_age1 * PT_cost ) * age1 + ( Beta_Cost_age2 * PT_cost ) * age2 + ( Beta_Cost_age3 * PT_cost ) * age3 + Beta_Age1_PT * age1 + Beta_Age2_PT * age2 + Beta_urb * urb + Beta_TripWork * Tripwork + Beta_TripLeisure * TripLeisure</em></td></tr><tr class=biostyle><td align=right><strong><em>Opt2:</em></strong>	</td><td><em>ASC_PM  * one + Beta_time_PM * car_time + ( Beta_Cost_age1 * car_cost ) * age1 + ( Beta_Cost_age2 * car_cost ) * age2 + ( Beta_Cost_age3 * car_cost ) * age3 + Beta_Age1_PM * age1 + Beta_Age2_PM * age2 + Beta_urb * urb + Beta_roman * roman</em></td></tr><tr class=biostyle><td align=right><strong><em>Opt3:</em></strong>	</td><td><em>Beta_Distance * distance_trip</em></td></tr></table>
 <h1>Statistics</h1>
 <table border="0">
 <tr class=biostyle><td align=right><strong><em>Alt. 0 available:</em></strong>	</td><td><em>1694</em></td></tr><tr class=biostyle><td align=right><strong><em>Alt. 0 chosen:</em></strong>	</td><td><em>469</em></td></tr><tr class=biostyle><td align=right><strong><em>Alt. 1 available:</em></strong>	</td><td><em>1629</em></td></tr><tr class=biostyle><td align=right><strong><em>Alt. 1 chosen:</em></strong>	</td><td><em>1141</em></td></tr><tr class=biostyle><td align=right><strong><em>Alt. 2 available:</em></strong>	</td><td><em>603</em></td></tr><tr class=biostyle><td align=right><strong><em>Alt. 2 chosen:</em></strong>	</td><td><em>84</em></td></tr><tr class=biostyle><td align=right><strong><em>Cte loglikelihood (only for full choice sets):</em></strong>	</td><td><em>-1305.56</em></td></tr><tr class=biostyle><td align=right><strong><em>Null loglikelihood:</em></strong>	</td><td><em>-1380.54</em></td></tr></table>
@@ -62,39 +62,39 @@ Tue Nov 21 17:21:18 2017</p>
 <p><font size='-1'>Click on the headers of the columns to sort the table  [<a href='http://www.kryogenix.org/code/browser/sorttable/' target='_blank'>Credits</a>]</font></p>
 <table border="1" class="sortable">
 <tr class=biostyle><th>Name </th><th>Value</th><th>Std err</th><th>t-test</th><th>p-value</th><th></th><th>Robust Std err</th><th>Robust t-test</th><th>p-value</th><th></th></tr>
-<!-- x[11]=ASC_PM  (0,-1.00968) [-10000,10000] FREE ID=10142--><tr class=biostyle>
+<!-- x[11]=ASC_PM  (0,-1.00968) [-10000,10000] FREE ID=10140--><tr class=biostyle>
 <td>ASC_PM </td><td>-1.01</td><td>0.431</td><td>-2.34</td><td>0.02</td><td></td><td>0.437</td><td>-2.31</td><td>0.02</td><td></td></tr>
 <!-- x[0]=ASC_PT (0,-1.1256) [-10000,10000] FREE ID=10121--><tr class=biostyle>
 <td>ASC_PT</td><td>-1.13</td><td>0.486</td><td>-2.32</td><td>0.02</td><td></td><td>0.485</td><td>-2.32</td><td>0.02</td><td></td></tr>
-<!-- x[13]=Beta_Age1_PM (0,2.16987) [-10000,10000] FREE ID=10146--><tr class=biostyle>
+<!-- x[13]=Beta_Age1_PM (0,2.16987) [-10000,10000] FREE ID=10144--><tr class=biostyle>
 <td>Beta_Age1_PM</td><td>2.17</td><td>0.711</td><td>3.05</td><td>0.00</td><td></td><td>0.694</td><td>3.13</td><td>0.00</td><td></td></tr>
-<!-- x[6]=Beta_Age1_PT (0,2.25718) [-10000,10000] FREE ID=10134--><tr class=biostyle>
+<!-- x[6]=Beta_Age1_PT (0,2.25718) [-10000,10000] FREE ID=10132--><tr class=biostyle>
 <td>Beta_Age1_PT</td><td>2.26</td><td>0.711</td><td>3.17</td><td>0.00</td><td></td><td>0.694</td><td>3.25</td><td>0.00</td><td></td></tr>
-<!-- x[14]=Beta_Age2_PM (0,-0.0118403) [-10000,10000] FREE ID=10147--><tr class=biostyle>
+<!-- x[14]=Beta_Age2_PM (0,-0.0118403) [-10000,10000] FREE ID=10145--><tr class=biostyle>
 <td>Beta_Age2_PM</td><td>-0.0118</td><td>0.00791</td><td>-1.50</td><td>0.13</td><td>*</td><td>0.00796</td><td>-1.49</td><td>0.14</td><td>*</td></tr>
-<!-- x[7]=Beta_Age2_PT (0,-0.0159007) [-10000,10000] FREE ID=10135--><tr class=biostyle>
+<!-- x[7]=Beta_Age2_PT (0,-0.0159007) [-10000,10000] FREE ID=10133--><tr class=biostyle>
 <td>Beta_Age2_PT</td><td>-0.0159</td><td>0.00827</td><td>-1.92</td><td>0.05</td><td>*</td><td>0.00825</td><td>-1.93</td><td>0.05</td><td>*</td></tr>
-<!-- x[3]=Beta_Cost_age1 (0,-0.00788147) [-10000,10000] FREE ID=10127--><tr class=biostyle>
+<!-- x[3]=Beta_Cost_age1 (0,-0.00788147) [-10000,10000] FREE ID=10125--><tr class=biostyle>
 <td>Beta_Cost_age1</td><td>-0.00788</td><td>0.00287</td><td>-2.75</td><td>0.01</td><td></td><td>0.00216</td><td>-3.65</td><td>0.00</td><td></td></tr>
-<!-- x[4]=Beta_Cost_age2 (0,-0.00180526) [-10000,10000] FREE ID=10130--><tr class=biostyle>
+<!-- x[4]=Beta_Cost_age2 (0,-0.00180526) [-10000,10000] FREE ID=10128--><tr class=biostyle>
 <td>Beta_Cost_age2</td><td>-0.00181</td><td>0.000245</td><td>-7.37</td><td>0.00</td><td></td><td>0.000365</td><td>-4.95</td><td>0.00</td><td></td></tr>
-<!-- x[5]=Beta_Cost_age3 (0,-0.000648953) [-10000,10000] FREE ID=10132--><tr class=biostyle>
+<!-- x[5]=Beta_Cost_age3 (0,-0.000648953) [-10000,10000] FREE ID=10130--><tr class=biostyle>
 <td>Beta_Cost_age3</td><td>-0.000649</td><td>0.000248</td><td>-2.61</td><td>0.01</td><td></td><td>0.000335</td><td>-1.94</td><td>0.05</td><td>*</td></tr>
-<!-- x[16]=Beta_Distance (0,-0.719566) [-10000,10000] FREE ID=10150--><tr class=biostyle>
+<!-- x[16]=Beta_Distance (0,-0.719566) [-10000,10000] FREE ID=10148--><tr class=biostyle>
 <td>Beta_Distance</td><td>-0.720</td><td>0.0873</td><td>-8.24</td><td>0.00</td><td></td><td>0.0801</td><td>-8.98</td><td>0.00</td><td></td></tr>
-<!-- x[10]=Beta_TripLeisure (0,-0.204178) [-10000,10000] FREE ID=10140--><tr class=biostyle>
+<!-- x[10]=Beta_TripLeisure (0,-0.204178) [-10000,10000] FREE ID=10138--><tr class=biostyle>
 <td>Beta_TripLeisure</td><td>-0.204</td><td>0.218</td><td>-0.94</td><td>0.35</td><td>*</td><td>0.218</td><td>-0.94</td><td>0.35</td><td>*</td></tr>
-<!-- x[9]=Beta_TripWork (0,0.32484) [-10000,10000] FREE ID=10138--><tr class=biostyle>
+<!-- x[9]=Beta_TripWork (0,0.32484) [-10000,10000] FREE ID=10136--><tr class=biostyle>
 <td>Beta_TripWork</td><td>0.325</td><td>0.215</td><td>1.51</td><td>0.13</td><td>*</td><td>0.210</td><td>1.55</td><td>0.12</td><td>*</td></tr>
-<!-- x[15]=Beta_roman (0,0.891759) [-10000,10000] FREE ID=10148--><tr class=biostyle>
+<!-- x[15]=Beta_roman (0,0.891759) [-10000,10000] FREE ID=10146--><tr class=biostyle>
 <td>Beta_roman</td><td>0.892</td><td>0.160</td><td>5.56</td><td>0.00</td><td></td><td>0.160</td><td>5.59</td><td>0.00</td><td></td></tr>
-<!-- x[12]=Beta_time_PM (0,-0.0201289) [-10000,10000] FREE ID=10143--><tr class=biostyle>
+<!-- x[12]=Beta_time_PM (0,-0.0201289) [-10000,10000] FREE ID=10141--><tr class=biostyle>
 <td>Beta_time_PM</td><td>-0.0201</td><td>0.00384</td><td>-5.24</td><td>0.00</td><td></td><td>0.00818</td><td>-2.46</td><td>0.01</td><td></td></tr>
 <!-- x[1]=Beta_time_PT (0,0.00823547) [-10000,10000] FREE ID=10122--><tr class=biostyle>
 <td>Beta_time_PT</td><td>0.00824</td><td>0.00334</td><td>2.46</td><td>0.01</td><td></td><td>0.00597</td><td>1.38</td><td>0.17</td><td>*</td></tr>
-<!-- x[2]=Beta_time_PT_walk (0,-0.0335014) [-10000,10000] FREE ID=10124--><tr class=biostyle>
+<!-- x[2]=Beta_time_PT_walk (0,-0.0335014) [-10000,10000] FREE ID=10123--><tr class=biostyle>
 <td>Beta_time_PT_walk</td><td>-0.0335</td><td>0.00348</td><td>-9.62</td><td>0.00</td><td></td><td>0.00373</td><td>-8.98</td><td>0.00</td><td></td></tr>
-<!-- x[8]=Beta_urb (0,0.873923) [-10000,10000] FREE ID=10136--><tr class=biostyle>
+<!-- x[8]=Beta_urb (0,0.873923) [-10000,10000] FREE ID=10134--><tr class=biostyle>
 <td>Beta_urb</td><td>0.874</td><td>0.309</td><td>2.83</td><td>0.00</td><td></td><td>0.306</td><td>2.85</td><td>0.00</td><td></td></tr>
 </table>
 <h2>Correlation of coefficients</h2>

@@ -62,11 +62,9 @@ bike_walk_avail =  DefineVariable('bike_walk_avail', ((distance_km)<8 + (NbBicy>
 one  = DefineVariable('one',1)
 #----time
 car_time  = DefineVariable('car_time', TimeCar )
-pt_total_time = DefineVariable('pt_total_time', TimePT)
-pt_TOT_time = DefineVariable('pt_TOT_time', TimePT + WaitingTimePT + WalkingTimePT)
-pt_wait_time = DefineVariable('pt_wait_time', WaitingTimePT)
-pt_walk_time = DefineVariable('pt_walk_time',WalkingTimePT)
+pt_ww_time = DefineVariable('pt_ww_time',  WaitingTimePT + WalkingTimePT)
 pt_transp_time= DefineVariable('pt_transp_time',InVehicleTime*(InVehicleTime>0))
+
 distance_trip=DefineVariable('distance_trip',distance_km)
 reported_time=DefineVariable('reported_time',ReportedDuration)
 #---cost
@@ -87,14 +85,14 @@ TripLeisure=DefineVariable('TripLeisure',1*(TripPurpose==3))
 #other
 Have_GA = DefineVariable('have_GA', GenAbST == 1)
 Multi_trips = DefineVariable('Multi_trips', NbTrajects > 2)
-Have_GA_LT = DefineVariable('Have_GA_LT',((GenAbST==1)+(LineRelST ==1)!=1))
+Have_GA_LT = DefineVariable('Have_GA_LT',((GenAbST==1)+(LineRelST ==1))>0)
 
 
 # Utilities
 ## public transport
 _Public_T = ASC_PT*one \
-            +Beta_time_PT*((((pt_TOT_time - pt_walk_time - pt_wait_time)**LAMBDA)-1)/LAMBDA) \
-            +Beta_time_PT_walk*(pt_TOT_time - pt_transp_time)\
+            +Beta_time_PT*((((pt_transp_time)**LAMBDA)-1)/LAMBDA) \
+            +Beta_time_PT_walk*(pt_ww_time)\
             + Beta_Cost_age1* PT_cost*age1*Have_GA_LT\
             + Beta_Cost_age2* PT_cost*age2*Have_GA_LT\
             + Beta_Cost_age3* PT_cost*age3*Have_GA_LT\
@@ -124,7 +122,7 @@ BIOGEME_OBJECT.STATISTICS['SampleSize0'] = Sum(one, 'obsIter')
 BIOGEME_OBJECT.EXCLUDE = (Choice   ==  -1) + \
                          ((Choice == 1) * (pm_avail != 1) > 0)+ \
                           ((Choice == 2)* (bike_walk_avail!=1)>0)\
-
+                        + (Have_GA_LT==1)
 
 
 BIOGEME_OBJECT.STATISTICS['SampleSize'] = Sum(one, 'obsIter')
@@ -151,7 +149,7 @@ norm_el_PM = 1099.6
 BIOGEME_OBJECT.STATISTICS['Normalization for Elasticities PT'] = Sum(AdjWeight*probPT,'obsIter')
 norm_el_PT = 515.667
 elas_PM_time = Derive(probPM,'car_time')*(car_time/probPM)
-elas_PT_time = Derive(probPT,'pt_TOT_time')*(pt_TOT_time/probPT) #ZERO
+elas_PT_time = Derive(probPT,'pt_transp_time')*(TimePT/probPT) #ZERO
 elas_PM_cost = Derive(probPM,'car_cost')*(car_cost/probPM)
 elas_PT_cost = Derive(probPT,'PT_cost')*(PT_cost/probPT) #ZERO
 Agg_elasT_PM = elas_PM_time*probPM/norm_el_PM
@@ -160,8 +158,9 @@ Agg_elasC_PM = elas_PM_cost*probPM/norm_el_PM
 Agg_elasC_PT = elas_PT_cost*probPT/norm_el_PT
 
 probChosen = bioLogit(V,av,Choice) #Instead of reporting the choice in the simulation file, the probability of the chosen can be printed
-VOT_CAR = Derive(probPM,'car_time')/Derive(probPM,'car_cost')
-VOT_PT = Derive(probPT,'pt_TOT_time')/Derive(probPT,'PT_cost')
+VOT_CAR = Derive(_Private_M,'car_time')/Derive(_Private_M,'car_cost')
+VOT_PT = Derive(_Public_T,'pt_transp_time')/Derive(_Public_T,'PT_cost')
+VOT_walk= Derive(_Public_T,'pt_ww_time')/Derive(_Public_T,'PT_cost')
 Revenue_PT = probPT * PT_cost
 # Defines an itertor on the data
 rowIterator('obsIter')
@@ -176,7 +175,9 @@ simulate = {'probPT': probPT,
             'Agg_elasC_PM': Agg_elasC_PM,
             'VOT_PT': VOT_PT,
             'VOT_CAR':VOT_CAR,
+            'VOT_PTwalking':VOT_walk,
             'Revenue_PT':Revenue_PT
             }
+
 
 BIOGEME_OBJECT.SIMULATE = Enumerate(simulate,'obsIter')

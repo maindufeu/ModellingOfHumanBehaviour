@@ -33,6 +33,7 @@ BIOGEME_OBJECT.VARCOVAR = vc
 
 pm_avail =  DefineVariable('pm_avail', ((CarAvail != 3)+(NbMoto>=1))>0 )
 bike_walk_avail =  DefineVariable('bike_walk_avail', ((distance_km)<8 + (NbBicy>0)*(distance_km)<16)>0)
+abo= DefineVariable('abo',(LineRelST==1)+(GenAbST==1))
 one  = DefineVariable('one',1)
 car_time  = DefineVariable('car_time', TimeCar )
 pt_total_time = DefineVariable('pt_total_time', TimePT)
@@ -44,7 +45,7 @@ PT_cost=DefineVariable('PT_cost',MarginalCostPT)  #marginal tiens en compte le d
 
 # Utilities
 ## public transport
-_Public_T = ASC_PT*one+ Beta_time_PT*pt_TOT_time + Beta_Cost* PT_cost
+_Public_T = ASC_PT*one+ Beta_time_PT*pt_total_time + Beta_Cost* PT_cost
 ## private mode
 _Private_M = ASC_PM*one+ Beta_time_PM*car_time+ Beta_Cost*car_cost
 ## soft modes
@@ -60,7 +61,6 @@ BIOGEME_OBJECT.STATISTICS['SampleSize0'] = Sum(one, 'obsIter')
 BIOGEME_OBJECT.EXCLUDE = (Choice   ==  -1) + \
                          ((Choice == 1) * (pm_avail != 1) > 0)+ \
                           ((Choice == 2)* (bike_walk_avail!=1)>0)\
-
 
 
 BIOGEME_OBJECT.STATISTICS['SampleSize'] = Sum(one, 'obsIter')
@@ -87,7 +87,7 @@ norm_el_PM = 1099.6
 BIOGEME_OBJECT.STATISTICS['Normalization for Elasticities PT'] = Sum(AdjWeight*probPT,'obsIter')
 norm_el_PT = 515.667
 elas_PM_time = Derive(probPM,'car_time')*(car_time/probPM)
-elas_PT_time = Derive(probPT,'pt_TOT_time')*(pt_TOT_time/probPT) #ZERO
+elas_PT_time = Derive(probPT,'pt_total_time')*(pt_TOT_time/probPT) #ZERO
 elas_PM_cost = Derive(probPM,'car_cost')*(car_cost/probPM)
 elas_PT_cost = Derive(probPT,'PT_cost')*(PT_cost/probPT) #ZERO
 Agg_elasT_PM = elas_PM_time*probPM/norm_el_PM
@@ -96,8 +96,8 @@ Agg_elasC_PM = elas_PM_cost*probPM/norm_el_PM
 Agg_elasC_PT = elas_PT_cost*probPT/norm_el_PT
 
 probChosen = bioLogit(V,av,Choice) #Instead of reporting the choice in the simulation file, the probability of the chosen can be printed
-VOT_CAR = Derive(probPM,'car_time')/Derive(probPM,'car_cost')
-VOT_PT = Derive(probPT,'pt_TOT_time')/Derive(probPT,'PT_cost')
+VOT_CAR = Derive(_Private_M,'car_time')/Derive(_Private_M,'car_cost')
+VOT_PT = Derive(_Public_T,'pt_total_time')/Derive(_Public_T,'PT_cost')
 Revenue_PT = probPT * PT_cost
 # Defines an itertor on the data
 rowIterator('obsIter')
