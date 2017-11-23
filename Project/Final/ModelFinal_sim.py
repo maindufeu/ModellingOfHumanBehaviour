@@ -122,7 +122,7 @@ BIOGEME_OBJECT.STATISTICS['SampleSize0'] = Sum(one, 'obsIter')
 BIOGEME_OBJECT.EXCLUDE = (Choice   ==  -1) + \
                          ((Choice == 1) * (pm_avail != 1) > 0)+ \
                           ((Choice == 2)* (bike_walk_avail!=1)>0)\
-                        + (Have_GA_LT==1)
+                        + (Have_GA_LT==0)
 
 
 BIOGEME_OBJECT.STATISTICS['SampleSize'] = Sum(one, 'obsIter')

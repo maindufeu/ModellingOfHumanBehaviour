@@ -1,31 +1,33 @@
 This file has automatically been generated.
-Thu Nov 23 18:39:35 2017
+Thu Nov 23 18:46:31 2017
 Michel Bierlaire, EPFL
 
 biogeme 2.6a [Mon Apr 24 10:19:20 BST 2017]
 Michel Bierlaire, EPFL
 
-Warning: [18:39:35]bioMain.cc:108  pythonbiogeme ModelFinal_sim data.dat
-[18:39:35]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
-[18:39:35]bioModelParser.cc:109  ModelFinal_sim.py exists
-[18:39:35]bioModelParser.cc:2098  Build dictionary
-[18:39:35]bioModelParser.cc:2135  Done
-[18:39:35]bioModelParser.cc:290  Sensitivity analysis will be performed
+Warning: [18:46:31]bioMain.cc:108  pythonbiogeme ModelFinal_sim data.dat
+[18:46:31]bioParameters.cc:399  Parameter documentation generated: pythonparam.html
+[18:46:31]bioModelParser.cc:109  ModelFinal_sim.py exists
+[18:46:31]bioModelParser.cc:2098  Build dictionary
+[18:46:31]bioModelParser.cc:2135  Done
+[18:46:31]bioModelParser.cc:290  Sensitivity analysis will be performed
  Read sample in binary format from __bin_data.dat *****
  Processing the sample file: __bin_data.dat [00:00]
  Nbr of cores reported by the system: 4
  Nbr of cores used by biogeme: 2
 Warning:  Only one thread is used for simulation.
- [140/1440] Est. term. time: Thu Nov 23 18:39:45 2017 (in 00:09)
- [280/1440] Est. term. time: Thu Nov 23 18:39:50 2017 (in 00:12)
- [420/1440] Est. term. time: Thu Nov 23 18:39:48 2017 (in 00:09)
- [560/1440] Est. term. time: Thu Nov 23 18:39:47 2017 (in 00:07)
- [700/1440] Est. term. time: Thu Nov 23 18:39:47 2017 (in 00:06)
- [840/1440] Est. term. time: Thu Nov 23 18:39:48 2017 (in 00:05)
- [980/1440] Est. term. time: Thu Nov 23 18:39:48 2017 (in 00:04)
- [1120/1440] Est. term. time: Thu Nov 23 18:39:49 2017 (in 00:03)
- [1260/1440] Est. term. time: Thu Nov 23 18:39:48 2017 (in 00:01)
- [1400/1440] Est. term. time: Thu Nov 23 18:39:48 2017 (in 00:00)
+ [20/256] Est. term. time: Thu Nov 23 18:46:32 2017 (in 00:00)
+ [40/256] Est. term. time: Thu Nov 23 18:46:32 2017 (in 00:00)
+ [60/256] Est. term. time: Thu Nov 23 18:46:32 2017 (in 00:00)
+ [80/256] Est. term. time: Thu Nov 23 18:46:32 2017 (in 00:00)
+ [100/256] Est. term. time: Thu Nov 23 18:46:32 2017 (in 00:00)
+ [120/256] Est. term. time: Thu Nov 23 18:46:34 2017 (in 00:01)
+ [140/256] Est. term. time: Thu Nov 23 18:46:33 2017 (in 00:00)
+ [160/256] Est. term. time: Thu Nov 23 18:46:33 2017 (in 00:00)
+ [180/256] Est. term. time: Thu Nov 23 18:46:33 2017 (in 00:00)
+ [200/256] Est. term. time: Thu Nov 23 18:46:33 2017 (in 00:00)
+ [220/256] Est. term. time: Thu Nov 23 18:46:34 2017 (in 00:00)
+ [240/256] Est. term. time: Thu Nov 23 18:46:34 2017 (in 00:00)
  --------------------------------------------------------
  Directory: /Users/tomtom/GoogleDrive/EPFL/Master/MA3/Modelling Behaviour/Project/Models/ModellingOfHumanBehaviour/Project/Final
  The following files have been generated
@@ -42,4 +44,4 @@ Warning:  Only one thread is used for simulation.
  --------------------------------------------------------
  Important files
  --------------------------------------------------------
-      ModelFinal_sim~3.html: Results in HTML format
+      ModelFinal_sim.html: Results in HTML format
